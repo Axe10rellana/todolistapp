@@ -1,0 +1,58 @@
+//estilos de reseteo
+$default-font-color: #000;
+$background-color: #4a90e2;
+$container-bgcolor: #f2f2f2;
+$container-bordercolor: #000;
+$textbox-bordercolor: lightgray;
+$button-textcolor: #fff;
+$button-hovercolor: #000;
+$add-button-color: #4caf50;
+$clear-button-color: #9f6060;
+$font: "Roboto", sans-serif;
+
+@mixin mq($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-family: $font;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  color: $default-font-color;
+  background-color: $background-color;
+  padding: 20px 0;
+  @include mq(768px) {
+    font-size: 22px;
+  }
+}
+
+[id] {
+  scroll-margin-top: 2ex;
+}
+
+section {
+  background-color: $container-bgcolor;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid $container-bordercolor;
+  border-radius: 10px;
+}
+//fin de estilos de reseteo

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lista de tareas hecha en javascript">
+  <meta name="theme-color" content="#4a90e2">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:title" name="twitter:title" content="Lista de tareas">
+  <meta property="og:url" name="twitter:url" content="https://Axe10rellana.github.io/todolistapp/todolistapp">
+  <meta property="og:description" name="twitter:description" content="Lista de tareas hecha en javascript">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="canonical" href="https://Axe10rellana.github.io/todolistapp/todolistapp">
+  <link rel="favicon" href="https://Axe10rellana.github.io/todolistapp/todolistapp/assets/favicon.png">
+  <link rel="apple-touch-icon" href="https://Axe10rellana.github.io/todolistapp/todolistapp/assets/favicon.png">
+  <script src="https://kit.fontawesome.com/a74e3c1ac7.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <title>Lista de tareas</title>
+</head>
+
+<body>
+  <main>
+    <section class="newItemEntry">
+      <form id="itemEntryForm">
+        <label for="newItem">Escribi una nueva tarea</label>
+        <input id="newItem" type="text" size="40" autocomplete="off" placeholder="Agregar Tarea" tabindex="0" />
+        <button id="addItem" class="button" title="Agregar una nueva tarea"
+          aria-label="Agregar una nueva tarea a la lista" tabindex="0">+</button>
+      </form>
+    </section>
+    <section class="listContainer">
+      <div class="listTitle">
+        <h1 tabindex="0">Lista De Tareas</h1>
+        <button id="clearItems" class="button" title="Limpiar la lista"
+          aria-label="Remover todas las tareas de la lista" tabindex="0">Limpiar</button>
+      </div>
+      <hr />
+      <div id="listItems">
+      </div>
+      <p id="confirmation" class="confirmation" aria-live="assertive"></p>
+    </section>
+  </main>
+  <script src="js/app.js" type="module"></script>
+</body>
+
+</html>
